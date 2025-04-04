@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   </head>
   <body>
     <header>
@@ -45,21 +46,49 @@
       </div>
       <div class="box projects">
         <h2>Projects</h2>
-        <p>
-          <strong>Project One</strong> - A web application for booking events.
-          <a href="#">View Project</a>
-        </p>
-
-        <p>
-          <strong>Project Two</strong> - A mobile app for tracking fitness
-          activities.
-          <a href="#">View Project</a>
-        </p>
+        <div class="project-container">
+          <p>
+            <strong>EventEase</strong>
+          </p>
+          <image src="files/EventEase.png" alt="Project One" />
+          <div class="description">
+            <p id="eventEase">
+              EventEase is a modern web app that allows users to browse, book,
+              and manage tickets for events. It features user authentication, a
+              responsive design, and an admin dashboard for organizers.<br /><br />
+              Key Features:<br />
+              <li>Event discovery with filters.</li>
+              <li>Ticket booking and QR code generation.</li>
+              <li>
+                Admin panel for event creation Payment integration via Stripe.
+              </li>
+            </p>
+          </div>
+        </div>
+        <div class="project-container">
+          <p>
+            <br />
+            <strong>FitTrack</strong>
+          </p>
+          <image src="files/FitTrack.png" alt="Project Two" />
+          <div class="description">
+            <p>
+              FitTrack is a cross-platform mobile app built with React Native to
+              help users monitor their fitness activities like running, cycling,
+              and walking. The app uses GPS tracking, stores user workouts, and
+              displays stats like distance, duration, and calories burned.<br /><br />
+              Key Features:<br />
+              <li>Real-time activity tracking with geolocation.</li>
+              <li>Workout history log Calorie and distance estimation.</li>
+              <li>Clean UI with dark/light mode support.</li>
+            </p>
+          </div>
+        </div>
       </div>
       <div class="box education">
         <h2>Education</h2>
         <p>B.S. in Geospatial Information Science, JKUAT</p>
-        <a href="files/My_Resume.pdf" download>
+        <a href="files/My Resume.pdf" download>
           <button>Download CV</button>
         </a>
       </div>
@@ -71,5 +100,22 @@
         <button>Send</button>
       </div>
     </section>
+    <footer style="text-align:center; padding: 20px; background:#192331">
+      <h3>Reach Out</h3>
+      <div style="font-size: 1.5rem;">
+        <a href="https://www.linkedin.com/in/christopher-mutua-25182a323/" target="_blank" style="margin: 0 150px; color: #0a66c2;">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:christophermutua2454@gmail.com" style="margin: 0 150px; color: #EA4335;">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="tel:+254758685636" style="margin: 0 250px; color: #34A853;">
+          <i class="fas fa-phone"></i>
+          <a href="https://wa.me/0758685636" target="_blank" style="margin: 0 15px; color: #25D366;">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </footer>
+    
   </body>
 </html>
